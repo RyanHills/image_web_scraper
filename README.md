@@ -69,32 +69,6 @@ This repository contains a web scraper tool that scrapes images from websites an
 
     This script will read the initial seed URLs from `seed_urls.txt`, dynamically update the list of seed URLs during the crawling process, and continuously run with a delay between each scraping cycle.
 
-### Categorizing Images
-
-1. **Update the `categories_hashes` in the `category.py` script:**
-
-    Calculate perceptual hashes for representative sample images of each category and update `categories_hashes` with these values. You can calculate the hashes using the following snippet:
-
-    ```python
-    from PIL import Image
-    import imagehash
-
-    sample_image_path = 'path_to_sample_image.jpg'
-    sample_image = Image.open(sample_image_path)
-    sample_hash = imagehash.average_hash(sample_image)
-    print(sample_hash)
-    ```
-
-    Replace the example hashes with the actual hashes of your sample images in the `category.py` script.
-
-2. **Run the categorizing script:**
-
-    ```sh
-    python category.py
-    ```
-
-    This script will search through the `images` folder, categorize the images based on their content, handle any filename conflicts, and move the images into the respective category folders.
-
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any changes.
