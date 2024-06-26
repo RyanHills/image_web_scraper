@@ -64,7 +64,7 @@ This repository contains a web scraper tool that scrapes images from websites an
 2. **Run the web scraper:**
 
     ```sh
-    python dynamic_web_crawler.py
+    python web_scraper_tool.py
     ```
 
     This script will read the initial seed URLs from `seed_urls.txt`, dynamically update the list of seed URLs during the crawling process, and continuously run with a delay between each scraping cycle.
