@@ -17,8 +17,8 @@ This repository contains a web scraper tool that scrapes images from websites an
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/web-scraper-tool.git
-    cd web-scraper-tool
+    git clone https://github.com/ryanhills/image_web_scraper.git
+    cd image_web_scraper
     ```
 
 2. **Create a virtual environment:**
