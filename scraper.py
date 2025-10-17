@@ -106,3 +106,4 @@ if __name__ == "__main__":
 
     automate_scraping(seed_file, interval)
 
+#add cool thiong
